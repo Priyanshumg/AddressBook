@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace AddressBookMain
 {
-    internal class Contacts
-    {
+    // Only For Storage Purpose only
+    class ContactsBook
+    {   
+        //Created An N dimensional Dictionary
+        public Dictionary<string, Dictionary<string, string>> UserData = new Dictionary<string, Dictionary<string, string>>();
+
     }
 }
