@@ -12,5 +12,15 @@ namespace AddressBookMain
         //Created An N dimensional Dictionary
         public Dictionary<string, Dictionary<string, string>> UserData = new Dictionary<string, Dictionary<string, string>>();
 
+        // User data Information Space
+        private string userName;
+        private string firstName;
+        private string lastName;
+        private string userAddress;
+        private string userCity;
+        private string userState;
+        private string userZip;
+        private string phoneNumber;
+        private string email;
     }
 }
