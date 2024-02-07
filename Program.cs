@@ -12,6 +12,10 @@ namespace AddressBookMain
         {
             // Greet's User 
             AddressBookOperations.GreetUser();
+            
+            // Takes User Inputs and Appends Value to Contact Book
+            UserInputs.takeUserInputs();
+
             Console.ReadLine();
         }
     }
