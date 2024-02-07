@@ -46,7 +46,7 @@ namespace AddressBookMain
             string Eml = Console.ReadLine();
             Console.WriteLine();
 
-            AddressBookOperations.AddUserName_AddUserData(username, fname, lname, Addr, city, state, Zip, PhN, Eml);
+            AddressBookOperations.AddUserToDict(username, fname, lname, Addr, city, state, Zip, PhN, Eml);
         }
 
         public static void EditingInputs(string UserName)
@@ -75,7 +75,7 @@ namespace AddressBookMain
             Console.Write("Enter the new Email: ");
             string EML = Console.ReadLine();
 
-            AddressBookOperations.AddUserName_AddUserData(UserName, fname, Lname, Addr, city, state, zip, phn, EML);
+            AddressBookOperations.AddUserToDict(UserName, fname, Lname, Addr, city, state, zip, phn, EML);
 
         }
     }
