@@ -10,32 +10,41 @@ namespace AddressBookMain
     {
         public static void takeUserInputs()
         {
-            Console.WriteLine("Please Type your userName");
+            Console.Write("Please Type your user Name: ");
             string username = Console.ReadLine();
+            Console.WriteLine();
 
-            Console.WriteLine("Please Type your FirstName");
+            Console.Write("Please Type your First Name: ");
             string fname = Console.ReadLine();
+            Console.WriteLine();
 
-            Console.WriteLine("Please Type your LastName");
+            Console.Write("Please Type your Last Name: ");
             string lname = Console.ReadLine();
+            Console.WriteLine();
 
-            Console.WriteLine("Please Type your Address");
+            Console.Write("Please Type your Address: ");
             string Addr = Console.ReadLine();
+            Console.WriteLine();
 
-            Console.WriteLine("Please Type your City");
+            Console.Write("Please Type your City: ");
             string city = Console.ReadLine();
+            Console.WriteLine();
 
-            Console.WriteLine("Please Type your State");
+            Console.Write("Please Type your State: ");
             string state = Console.ReadLine();
+            Console.WriteLine();
 
-            Console.WriteLine("Please Type your Zip Code");
+            Console.Write("Please Type your Zip Code: ");
             string Zip = Console.ReadLine();
+            Console.WriteLine();
 
-            Console.WriteLine("Please Type your Phone Number");
+            Console.Write("Please Type your Phone Number: ");
             string PhN = Console.ReadLine();
+            Console.WriteLine();
 
-            Console.WriteLine("Please Type your Email");
+            Console.Write("Please Type your Email: ");
             string Eml = Console.ReadLine();
+            Console.WriteLine();
 
             AddressBookOperations.AddUserName_AddUserData(username, fname, lname, Addr, city, state, Zip, PhN, Eml);
         }

@@ -17,6 +17,10 @@ namespace AddressBookMain
         public static void AddUserName_AddUserData(string UserName, String FirstName, String LastName, 
             String Address, String City, String State, String Zip, String PhoneNumber, String Email)
         {
+            if (!ContactsBook.UserData.ContainsKey(UserName))
+            {
+                ContactsBook.UserData[UserName] = new Dictionary<string, string>();
+            }
             ContactsBook.UserData[UserName]["First Name"] = FirstName;
             ContactsBook.UserData[UserName]["Last Name"] = LastName;
             ContactsBook.UserData[UserName]["Address"] = Address;
@@ -24,9 +28,21 @@ namespace AddressBookMain
             ContactsBook.UserData[UserName]["State"] = State;
             ContactsBook.UserData[UserName]["Zip Code"] = Zip;
             ContactsBook.UserData[UserName]["Phone Number"] = PhoneNumber;
-            ContactsBook.UserData[UserName]["Email"] = Email;           
-            Console.WriteLine(ContactsBook.UserData[UserName]["First Name"]);
+            ContactsBook.UserData[UserName]["Email"] = Email;
+        }
 
+        public static void DisplayUserData(Dictionary<string, Dictionary<string, string>> UserData)
+        {
+            Console.Write("Type the UserName to display User Data: ");
+            string userName = Console.ReadLine(); 
+            Console.WriteLine($"First Name: {UserData[userName]["First Name"]}");
+            Console.WriteLine($"Last Name: {UserData[userName]["Last Name"]}");
+            Console.WriteLine($"Address: {UserData[userName]["Address"]}");
+            Console.WriteLine($"City: {UserData[userName]["City"]}");
+            Console.WriteLine($"State: {UserData[userName]["State"]}");
+            Console.WriteLine($"Zip Code: {UserData[userName]["Zip Code"]}");
+            Console.WriteLine($"Phone Number: {UserData[userName]["Phone Number"]}");
+            Console.WriteLine($"Email: {UserData[userName]["Email"]}");
         }
     }
 }
