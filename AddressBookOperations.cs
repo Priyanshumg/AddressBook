@@ -80,6 +80,7 @@ namespace AddressBookMain
             Console.WriteLine($"Zip Code: {UserData[userName]["Zip Code"]}");
             Console.WriteLine($"Phone Number: {UserData[userName]["Phone Number"]}");
             Console.WriteLine($"Email: {UserData[userName]["Email"]}");
+            Console.ReadLine();
         }
     }
 }
