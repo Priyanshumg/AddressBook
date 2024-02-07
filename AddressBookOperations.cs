@@ -33,6 +33,7 @@ namespace AddressBookMain
         public static void AddUserName_AddUserData(string UserName, String FirstName, String LastName, 
             String Address, String City, String State, String Zip, String PhoneNumber, String Email)
         {
+            // Create new User if the User Dosent exist in the Dictionary
             if (!ContactsBook.UserData.ContainsKey(UserName))
             {
                 ContactsBook.UserData[UserName] = new Dictionary<string, string>();
