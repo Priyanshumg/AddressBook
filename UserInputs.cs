@@ -48,5 +48,35 @@ namespace AddressBookMain
 
             AddressBookOperations.AddUserName_AddUserData(username, fname, lname, Addr, city, state, Zip, PhN, Eml);
         }
+
+        public static void EditingInputs(string UserName)
+        {
+            Console.Write("Enter the new First Name: ");
+            string fname = Console.ReadLine();
+
+            Console.Write("Enter the new Last Name: ");
+            string Lname = Console.ReadLine();
+
+            Console.Write("Enter the new Address: ");
+            string Addr = Console.ReadLine();
+
+            Console.Write("Enter the new City: ");
+            string city = Console.ReadLine();
+
+            Console.Write("Enter the new State: ");
+            string state = Console.ReadLine();
+
+            Console.Write("Enter the new ZipCode: ");
+            string zip = Console.ReadLine();
+
+            Console.Write("Enter the new Phone Number: ");
+            string phn = Console.ReadLine();
+
+            Console.Write("Enter the new Email: ");
+            string EML = Console.ReadLine();
+
+            AddressBookOperations.AddUserName_AddUserData(UserName, fname, Lname, Addr, city, state, zip, phn, EML);
+
+        }
     }
 }
