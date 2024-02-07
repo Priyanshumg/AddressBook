@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace AddressBookMain
 {
@@ -16,11 +17,6 @@ namespace AddressBookMain
         public static void AddUserName_AddUserData(string UserName, String FirstName, String LastName, 
             String Address, String City, String State, String Zip, String PhoneNumber, String Email)
         {
-            if (ContactsBook.UserData.ContainsKey(UserName))
-            {
-                ContactsBook.UserData[UserName] = new Dictionary<string, string>();
-            }
-
             ContactsBook.UserData[UserName]["First Name"] = FirstName;
             ContactsBook.UserData[UserName]["Last Name"] = LastName;
             ContactsBook.UserData[UserName]["Address"] = Address;
@@ -28,7 +24,9 @@ namespace AddressBookMain
             ContactsBook.UserData[UserName]["State"] = State;
             ContactsBook.UserData[UserName]["Zip Code"] = Zip;
             ContactsBook.UserData[UserName]["Phone Number"] = PhoneNumber;
-            ContactsBook.UserData[UserName]["Email"] = Email;
+            ContactsBook.UserData[UserName]["Email"] = Email;           
+            Console.WriteLine(ContactsBook.UserData[UserName]["First Name"]);
+
         }
     }
 }

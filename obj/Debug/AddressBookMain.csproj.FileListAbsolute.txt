@@ -1,0 +1,7 @@
+C:\Users\Dell\Desktop\locobuzz .net training\AddressBookMain\bin\Debug\AddressBookMain.exe.config
+C:\Users\Dell\Desktop\locobuzz .net training\AddressBookMain\bin\Debug\AddressBookMain.exe
+C:\Users\Dell\Desktop\locobuzz .net training\AddressBookMain\bin\Debug\AddressBookMain.pdb
+C:\Users\Dell\Desktop\locobuzz .net training\AddressBookMain\obj\Debug\AddressBookMain.csproj.AssemblyReference.cache
+C:\Users\Dell\Desktop\locobuzz .net training\AddressBookMain\obj\Debug\AddressBookMain.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\locobuzz .net training\AddressBookMain\obj\Debug\AddressBookMain.exe
+C:\Users\Dell\Desktop\locobuzz .net training\AddressBookMain\obj\Debug\AddressBookMain.pdb

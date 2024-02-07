@@ -12,6 +12,7 @@ namespace AddressBookMain
         {
             // Greet's User 
             AddressBookOperations.GreetUser();
+            Console.ReadLine();
         }
     }
 }
