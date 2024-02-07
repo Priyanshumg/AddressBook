@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace AddressBookMain
@@ -35,7 +36,10 @@ namespace AddressBookMain
                     Console.Clear();
                     break;
                 case "exit":
+                    Console.Clear();
                     Console.WriteLine("Exiting Program");
+                    Console.WriteLine("Thank you for using service :) ");
+                    Thread.Sleep(2000);
                     exit = true;
                     break;
 
