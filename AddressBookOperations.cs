@@ -30,7 +30,7 @@ namespace AddressBookMain
             ContactsBook.UserData[UserName]["Email"] = Email;
         }
 
-        public static void AddUserName_AddUserData(string UserName, String FirstName, String LastName, 
+        public static void AddUserToDict(string UserName, String FirstName, String LastName, 
             String Address, String City, String State, String Zip, String PhoneNumber, String Email)
         {
             // Create new User if the User Dosent exist in the Dictionary
