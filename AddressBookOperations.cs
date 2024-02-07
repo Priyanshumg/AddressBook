@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Runtime.Versioning;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
@@ -19,7 +20,6 @@ namespace AddressBookMain
         public static void AddOrEditData(string UserName, String FirstName, String LastName,
             String Address, String City, String State, String Zip, String PhoneNumber, String Email)
         {
-
             ContactsBook.UserData[UserName]["First Name"] = FirstName;
             ContactsBook.UserData[UserName]["Last Name"] = LastName;
             ContactsBook.UserData[UserName]["Address"] = Address;
@@ -56,6 +56,16 @@ namespace AddressBookMain
             {
                 UserInputs.EditingInputs(UserName);
             }
+        }
+
+        public static void DeleteUser()
+        {
+            Console.WriteLine("Enter UserName to Delete");
+            String UserName = Console.ReadLine();
+            Console.WriteLine("Removing User from the AddressBook");
+            Thread.Sleep(1000);
+            ContactsBook.UserData.Remove(UserName);
+            Console.WriteLine("Removed User Successfullt");
         }
 
         public static void DisplayUserData(Dictionary<string, Dictionary<string, string>> UserData)
