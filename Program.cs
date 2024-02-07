@@ -17,6 +17,9 @@ namespace AddressBookMain
             // Takes User Inputs and Appends Value to Contact Book
             UserInputs.takeUserInputs();
 
+            // Displays User Data by taking UserName
+            AddressBookOperations.DisplayUserData(ContactsBook.UserData);
+
             Console.ReadLine();
         }
     }
