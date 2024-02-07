@@ -12,11 +12,14 @@ namespace AddressBookMain
 {
     class AddressBookOperations
     {
+        // This methods Greets User
         public static void GreetUser()
         {
             Console.WriteLine("Hello User, Welcome to AddressBook");
         }
 
+
+        // This Methods Edits Values
         public static void AddOrEditData(string UserName, String FirstName, String LastName,
             String Address, String City, String State, String Zip, String PhoneNumber, String Email)
         {
@@ -30,6 +33,11 @@ namespace AddressBookMain
             ContactsBook.UserData[UserName]["Email"] = Email;
         }
 
+        /*  
+         *  This Method Add User and checks if user Dosent exitst in the current context        
+         *  IF User Dosent Exist, then create new User
+         *  Adds Multiple User from this method
+         */
         public static void AddUserToDict(string UserName, String FirstName, String LastName, 
             String Address, String City, String State, String Zip, String PhoneNumber, String Email)
         {
@@ -48,6 +56,8 @@ namespace AddressBookMain
             ContactsBook.UserData[UserName]["Email"] = Email;
         }
 
+
+        // Functionality to Edit User
         public static void EditUser()
         {
             Console.Write("Please Specify username to edit: ");
@@ -55,10 +65,12 @@ namespace AddressBookMain
 
             if (ContactsBook.UserData.ContainsKey(UserName))
             {
-                UserInputs.EditingInputs(UserName);
+                UserInputs.takeUserInputs(UserName);
             }
         }
 
+
+        // Functionality To Delete User
         public static void DeleteUser()
         {
             Console.WriteLine("Enter UserName to Delete");
@@ -69,6 +81,7 @@ namespace AddressBookMain
             Console.WriteLine("Removed User Successfullt");
         }
 
+        // Displaye Users Data
         public static void DisplayUserData(Dictionary<string, Dictionary<string, string>> UserData)
         {
             Console.Write("Type the UserName to display User Data: ");
