@@ -29,8 +29,11 @@ namespace AddressBookMain
                     Console.Clear();
                     break;
                 case "5":
-                    Console.WriteLine("type the city you want to search");
+                    Console.WriteLine("type the city you want to search for people");
                     AddressBookSearch.SearchByCity(Console.ReadLine());
+                    break;
+                case "6":
+                    Console.WriteLine("Type the State you want to search for people"); 
                     break;
                 case "exit": // To Exit the Program 
                     Console.WriteLine("Exiting Program");

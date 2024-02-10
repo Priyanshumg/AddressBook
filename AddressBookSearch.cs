@@ -18,11 +18,19 @@ namespace AddressBookMain
                     Console.WriteLine($"{users} is in {cityName}");
                 }
             }
-            //if (users.Contains(cityName))
-            //{
-            //    Console.WriteLine($"This {users} in {cityName}");
-            //}
-        Console.ReadLine();
+            Console.ReadLine();
+        }
+        public static void SearchByState(string stateName)
+        {
+            var searchData = ContactsBook.UserData;
+            foreach (var users in searchData.Keys)
+            {
+                if (searchData[users].ContainsKey("State") && searchData[users]["State"] == stateName)
+                {
+                    Console.WriteLine($"{users} is in {stateName} state");
+                }
+            }
+            Console.ReadLine();
         }
     }
 }
