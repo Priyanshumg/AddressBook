@@ -33,7 +33,8 @@ namespace AddressBookMain
                     AddressBookSearch.SearchByCity(Console.ReadLine());
                     break;
                 case "6":
-                    Console.WriteLine("Type the State you want to search for people"); 
+                    Console.WriteLine("Type the State you want to search for people");
+                    AddressBookSearch.SearchByState(Console.ReadLine());
                     break;
                 case "exit": // To Exit the Program 
                     Console.WriteLine("Exiting Program");
