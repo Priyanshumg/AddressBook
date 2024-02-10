@@ -81,6 +81,11 @@ namespace AddressBookMain
             Console.WriteLine("Removed User Successfullt");
         }
 
+        public static void CheckDuplicates()
+        {
+
+        }
+
         // Displaye Users Data
         public static void DisplayUserData(Dictionary<string, Dictionary<string, string>> UserData)
         {
