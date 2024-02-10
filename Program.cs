@@ -29,6 +29,8 @@ namespace AddressBookMain
                     Console.Clear();
                     break;
                 case "5":
+                    Console.WriteLine("type the city you want to search");
+                    AddressBookSearch.SearchByCity(Console.ReadLine());
                     break;
                 case "exit": // To Exit the Program 
                     Console.WriteLine("Exiting Program");
