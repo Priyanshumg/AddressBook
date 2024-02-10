@@ -15,6 +15,8 @@ namespace AddressBookMain
             Console.Write("Please Type your user Name: ");
             string username = Console.ReadLine();
             Console.WriteLine();
+            
+            // Denies user to enter same username, if username already existed
             while ((ContactsBook.UserData.ContainsKey(username)))
             {
                 Console.WriteLine("UserName Already Exist");
