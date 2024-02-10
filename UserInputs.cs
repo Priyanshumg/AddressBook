@@ -15,7 +15,13 @@ namespace AddressBookMain
             Console.Write("Please Type your user Name: ");
             string username = Console.ReadLine();
             Console.WriteLine();
-
+            while ((ContactsBook.UserData.ContainsKey(username)))
+            {
+                Console.WriteLine("UserName Already Exist");
+                Console.WriteLine("Type UserName Again");
+                username = Console.ReadLine();
+            }
+                
             // Store first name as fname
             Console.Write("Please Type your First Name: ");
             string fname = Console.ReadLine();
@@ -55,13 +61,15 @@ namespace AddressBookMain
             Console.Write("Please Type your Email: ");
             string Eml = Console.ReadLine();
             Console.WriteLine();
-            
+
             // Pushes To Dict
             AddressBookOperations.AddUserToDict(username, fname, lname, Addr, city, state, Zip, PhN, Eml);
         }
 
+        // OverLoading Function for Edditing Existing User
         public static void takeUserInputs(string UserName)
         {
+
             // Stores First Name in Fname
             Console.Write("Enter the new First Name: ");
             string fname = Console.ReadLine();

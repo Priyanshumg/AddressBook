@@ -18,7 +18,6 @@ namespace AddressBookMain
             Console.WriteLine("Hello User, Welcome to AddressBook");
         }
 
-
         // This Methods Edits Values
         public static void AddOrEditData(string UserName, String FirstName, String LastName,
             String Address, String City, String State, String Zip, String PhoneNumber, String Email)
@@ -56,7 +55,6 @@ namespace AddressBookMain
             ContactsBook.UserData[UserName]["Email"] = Email;
         }
 
-
         // Functionality to Edit User
         public static void EditUser()
         {
@@ -79,11 +77,6 @@ namespace AddressBookMain
             Thread.Sleep(1000);
             ContactsBook.UserData.Remove(UserName);
             Console.WriteLine("Removed User Successfullt");
-        }
-
-        public static void CheckDuplicates()
-        {
-
         }
 
         // Displaye Users Data

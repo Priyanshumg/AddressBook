@@ -34,8 +34,8 @@ namespace AddressBookMain
                     Thread.Sleep(2000);
                     exit = true;
                     break;
-                    // For None of Above Cases
-                default : Console.WriteLine("Please Enter from the Options"); break;
+                // For None of Above Cases
+                default: Console.WriteLine("Please Enter from the Options"); break;
             }
         }
 
@@ -51,10 +51,10 @@ namespace AddressBookMain
                 Console.WriteLine("Enter '3' For Editing Existing User");
                 Console.WriteLine("Enter '4' For Delete user");
                 Console.WriteLine("Enter Exit to Exit AddressBook");
-                
+
                 // Calling DisplayOptions Function, Passing an Input
                 DisplayOptions(Console.ReadLine());
-                
+
                 // Clearing Terminal Screen
                 Console.Clear();
             }
