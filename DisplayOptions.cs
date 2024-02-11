@@ -28,8 +28,12 @@ namespace AddressBookMain
                     Console.Clear();
                     break;
                 case "5":
-                    Console.WriteLine("type the city you want to search");
+                    Console.Write("type the city you want to search");
                     AddressBookSearch.SearchByCity(Console.ReadLine());
+                    break;
+                case "6":
+                    Console.Write("Person Name: ");
+                    DisplayPersonStateOrCity.DisplayPersonLocationByState(Console.ReadLine());
                     break;
                 case "exit": // To Exit the Program 
                     Console.WriteLine("Exiting Program");

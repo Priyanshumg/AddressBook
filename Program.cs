@@ -22,6 +22,7 @@ namespace AddressBookMain
                 Console.WriteLine("Enter '3' For Editing Existing User");
                 Console.WriteLine("Enter '4' For Delete user");
                 Console.WriteLine("Enter '5' to Search people across State or City");
+                Console.WriteLine("Enter '6; to search user city");
                 Console.WriteLine("Enter Exit to Exit AddressBook");
 
                 // Calling DisplayOptions Function, Passing an Input

@@ -56,6 +56,7 @@ namespace AddressBookMain
 
             // Stores PhoneNumber as PHN
             Console.Write("Please Type your Phone Number: ");
+            
             string PhN = Console.ReadLine();
             Console.WriteLine();
 
