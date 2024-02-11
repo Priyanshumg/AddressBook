@@ -100,7 +100,8 @@ namespace AddressBookMain
         public static void DisplayAllUsersWithData()
         {
             Console.WriteLine("Displaying all users Entries");
-            foreach (var user in ContactsBook.UserData.OrderBy(x => x.Key))
+            foreach (var user in ContactsBook.UserData.OrderBy
+                (x => x.Value["City"]).ThenBy(x => x.Value["Zip Code"]).ThenBy(x => x.Value["State"]))
             {
                 string username = user.Key;
                 Dictionary<string, string> userData = user.Value;
