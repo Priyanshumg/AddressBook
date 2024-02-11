@@ -103,5 +103,19 @@ namespace AddressBookMain
                 Console.WriteLine(user);
             }
         }
+        public static void DisplayAllUsersWithData()
+        {
+            foreach (var user in ContactsBook.UserData)
+            {
+                string username = user.Key;
+                Dictionary<string, string> userData = user.Value;
+                Console.WriteLine($"For the User: {user}");
+
+                foreach (var dataEntry in userData)
+                {
+                    Console.WriteLine($"\t{dataEntry.Key}: {dataEntry.Value}");
+                }
+            }
+        }
     }
 }
