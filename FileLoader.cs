@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace AddressBookMain
 {
@@ -27,9 +28,25 @@ namespace AddressBookMain
                         file.WriteLine($"{dataEntry.Key}: {dataEntry.Value}");
                     }
                     file.WriteLine();
+                    file.Close();
                 }
                 Console.WriteLine(" }");
             }
+        }
+        
+        public static void ReadDataFromTxt()
+        {
+            var Sampletxt = @"C:\Users\Dell\Desktop\locobuzz .net training\AddressBookMain\Sample.txt";
+            StreamReader FileReader = new StreamReader(Sampletxt);
+            string line = "";
+            while (line != null)
+            {
+                line = FileReader.ReadLine();
+                if (line != null)
+                    Console.WriteLine(line);
+            }
+            FileReader.Close();
+            Console.ReadLine();
         }
     }
 }
