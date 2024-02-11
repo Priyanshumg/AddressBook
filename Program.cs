@@ -50,7 +50,8 @@ namespace AddressBookMain
                     }
                     break;
                 case "7":
-                    AddressBookOperations.DisplayAllUsersWithData(); break;
+                    FileLoader.ReadDataFromTxt(); break;
+                    //AddressBookOperations.DisplayAllUsersWithData(); break;
                 case "exit": // To Exit the Program 
                     Console.WriteLine("Exiting Program");
                     Console.WriteLine("Thank you for using service :) ");
