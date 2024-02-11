@@ -17,7 +17,6 @@ namespace AddressBookMain
             {
                 case "1": // To Take User Input
                     UserInputs.takeUserInputs();
-                    AddressBookOperations.SortAllEntrieas();
                     break;
                 case "2": // To Display User Data
                     AddressBookOperations.DisplayUserData(ContactsBook.UserData);
