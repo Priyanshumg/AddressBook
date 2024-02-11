@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="AddressBookOperations.cs" />
     <Compile Include="AddressBookSearch.cs" />
-    <Compile Include="DisplayOptions.cs" />
     <Compile Include="DisplayPersonStateOrCity.cs" />
     <Compile Include="DuplicateChecker.cs" />
     <Compile Include="UserInputs.cs" />
