@@ -28,6 +28,13 @@ namespace AddressBookMain
                     AddressBookOperations.DeleteUser();
                     Console.Clear();
                     break;
+                case "5":
+                    Console.WriteLine("type the city you want to search for people");
+                    AddressBookSearch.SearchByCity(Console.ReadLine());
+                    break;
+                case "6":
+                    Console.WriteLine("Type the State you want to search for people"); 
+                    break;
                 case "exit": // To Exit the Program 
                     Console.WriteLine("Exiting Program");
                     Console.WriteLine("Thank you for using service :) ");
@@ -50,6 +57,7 @@ namespace AddressBookMain
                 Console.WriteLine("Enter '2' for Displaying User");
                 Console.WriteLine("Enter '3' For Editing Existing User");
                 Console.WriteLine("Enter '4' For Delete user");
+                Console.WriteLine("Enter '5' to Search people across State or City");
                 Console.WriteLine("Enter Exit to Exit AddressBook");
 
                 // Calling DisplayOptions Function, Passing an Input
