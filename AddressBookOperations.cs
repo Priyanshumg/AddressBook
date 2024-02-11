@@ -96,26 +96,22 @@ namespace AddressBookMain
         }
 
         // User book Sorter
-        public static void SortAllEntrieas()
-        {
-            foreach (var user in ContactsBook.UserData.OrderBy(x => x.Key))
-            {
-                Console.WriteLine(user);
-            }
-        }
+
         public static void DisplayAllUsersWithData()
         {
-            foreach (var user in ContactsBook.UserData)
+            Console.WriteLine("Displaying all users Entries");
+            foreach (var user in ContactsBook.UserData.OrderBy(x => x.Key))
             {
                 string username = user.Key;
                 Dictionary<string, string> userData = user.Value;
-                Console.WriteLine($"For the User: {user}");
+                Console.WriteLine($"For the User: {user.Key}");
 
                 foreach (var dataEntry in userData)
                 {
                     Console.WriteLine($"\t{dataEntry.Key}: {dataEntry.Value}");
                 }
             }
+            Console.ReadLine();
         }
     }
 }

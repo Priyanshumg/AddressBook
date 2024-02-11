@@ -17,6 +17,7 @@ namespace AddressBookMain
             {
                 case "1": // To Take User Input
                     UserInputs.takeUserInputs();
+                    AddressBookOperations.SortAllEntrieas();
                     break;
                 case "2": // To Display User Data
                     AddressBookOperations.DisplayUserData(ContactsBook.UserData);
@@ -49,6 +50,8 @@ namespace AddressBookMain
                         Console.WriteLine("You're entered incorrect context, Type Either City or State.");
                     }
                     break;
+                case "7":
+                    AddressBookOperations.DisplayAllUsersWithData(); break;
                 case "exit": // To Exit the Program 
                     Console.WriteLine("Exiting Program");
                     Console.WriteLine("Thank you for using service :) ");
