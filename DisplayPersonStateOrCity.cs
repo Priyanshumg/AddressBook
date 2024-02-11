@@ -14,6 +14,11 @@ namespace AddressBookMain
             Console.ReadLine();
         }
         
+        public static void DisplayPersonLocationByCity(string userName)
+        {
+            Console.WriteLine(ContactsBook.UserData[userName]["City"]);
+            Console.ReadLine();
+        }
 
     }
 }
