@@ -10,7 +10,7 @@ namespace AddressBookMain
 {
     internal class Program
     {
-        public static bool exit = false;
+        static public bool exit = false;
         static void DisplayOptions(string WhatUserWantToDsiplay)
         {
             switch (WhatUserWantToDsiplay)
@@ -80,7 +80,7 @@ namespace AddressBookMain
 
                 // Calling DisplayOptions Function, Passing an Input
                 DisplayOptions(Console.ReadLine());
-
+                FileLoader.LoadDataToTxt();
                 // Clearing Terminal Screen
                 Console.Clear();
             }
