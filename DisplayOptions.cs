@@ -33,7 +33,19 @@ namespace AddressBookMain
                     break;
                 case "6":
                     Console.Write("Person Name: ");
-                    DisplayPersonStateOrCity.DisplayPersonLocationByState(Console.ReadLine());
+                    Console.WriteLine("Do you want to Person City or State? ");
+                    if (Console.ReadLine().ToLower() == "state")
+                    {
+                        DisplayPersonStateOrCity.DisplayPersonLocationByState(Console.ReadLine());
+                    }
+                    else if (Console.ReadLine().ToLower() == "city")
+                    {
+                        DisplayPersonStateOrCity.DisplayPersonLocationByCity(Console.ReadLine());
+                    }
+                    else
+                    {
+                        Console.WriteLine("You're entered incorrect context, Type Either City or State.");
+                    }
                     break;
                 case "exit": // To Exit the Program 
                     Console.WriteLine("Exiting Program");
