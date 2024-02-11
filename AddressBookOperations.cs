@@ -94,5 +94,14 @@ namespace AddressBookMain
             Console.WriteLine($"Email: {UserData[userName]["Email"]}");
             Console.ReadLine();
         }
+
+        // User book Sorter
+        public static void SortAllEntrieas()
+        {
+            foreach (var user in ContactsBook.UserData.OrderBy(x => x.Key))
+            {
+                Console.WriteLine(user);
+            }
+        }
     }
 }

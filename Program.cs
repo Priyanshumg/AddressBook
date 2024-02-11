@@ -73,6 +73,7 @@ namespace AddressBookMain
                 Console.WriteLine("Enter '4' For Delete user");
                 Console.WriteLine("Enter '5' to Search people across State or City");
                 Console.WriteLine("Enter '6' to Search Person is in which state or city");
+                Console.WriteLine("Enter '7' to Display all Users");
                 Console.WriteLine("Enter Exit to Exit AddressBook");
 
                 // Calling DisplayOptions Function, Passing an Input
