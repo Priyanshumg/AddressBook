@@ -48,6 +48,8 @@
     <Compile Include="DisplayPersonStateOrCity.cs" />
     <Compile Include="DuplicateChecker.cs" />
     <Compile Include="FileLoader.cs" />
+    <Compile Include="ReadWriteCSV.cs" />
+    <Compile Include="ReadWriteJSON.cs" />
     <Compile Include="UserInputs.cs" />
     <Compile Include="ContactsBook.cs" />
     <Compile Include="Program.cs" />

@@ -82,6 +82,7 @@ namespace AddressBookMain
                 // Calling DisplayOptions Function, Passing an Input
                 DisplayOptions(Console.ReadLine());
                 FileLoader.LoadDataToTxt();
+                ReadWriteCSV.WriteCSV();
                 // Clearing Terminal Screen
                 Console.Clear();
             }
