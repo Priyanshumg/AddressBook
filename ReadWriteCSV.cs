@@ -28,5 +28,19 @@ namespace AddressBookMain
                 file.Close();
             }
         }
+        public static void ReadCSV()
+        {
+            var Sampletxt = @"C:\Users\Dell\Desktop\locobuzz .net training\AddressBookMain\Book1.csv";
+            StreamReader FileReader = new StreamReader(Sampletxt);
+            string line = "";
+            while (line != null)
+            {
+                line = FileReader.ReadLine();
+                if (line != null)
+                    Console.WriteLine(line);
+            }
+            FileReader.Close();
+            Console.ReadLine();
+        }
     }
 }
